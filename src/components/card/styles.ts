@@ -20,8 +20,10 @@ export const BottomContent = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    
+  
 `
-export const ShareAndFavorite = styled.div`
+export const WrapperButtons = styled.div`
     width: 4rem;
 
     display: flex;

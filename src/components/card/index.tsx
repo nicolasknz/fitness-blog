@@ -36,10 +36,10 @@ const Card = ({thumbnail, description, author,releaseDate}: CardProps) => {
                     <span>{releaseDate}</span>
                 </div>
             </Styled.Author>
-            <Styled.ShareAndFavorite>
+            <Styled.WrapperButtons>
                 <BiShareAlt color="000"/>
                 <GrFavorite />
-            </Styled.ShareAndFavorite>
+            </Styled.WrapperButtons>
 
         </Styled.BottomContent>
        
