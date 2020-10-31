@@ -4,14 +4,14 @@ export const Card = styled.div`
     width: 35rem;
     img {
         width: 100%;
-        height: 19rem;
+        height: 18rem;
         object-fit: cover;
     }
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         color: #000;
         font-weight: 600;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.1rem;
     }
 `
 
@@ -34,15 +34,15 @@ export const WrapperButtons = styled.div`
 export const Author = styled.div`
     display:flex;
     align-items: center;
-    margin-top: 1.3rem;
+    margin-top: 1.4rem;
 
     img {
-        width: 4.8rem;
-        height: 4.8rem;
+        width: 4.9rem;
+        height: 4.9rem;
 
-        margin-right: 1.5rem;
+        margin-right: 1.6rem;
 
-        border-radius: 50%;
+        border-radius: 49%;
     }
 
     div {
@@ -51,12 +51,12 @@ export const Author = styled.div`
 
         strong {
             letter-spacing: 0.1rem;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: #000;
             font-weight: 600;
         }
         span {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
     }
 
