@@ -23,6 +23,7 @@ const Home = () => {
                             alt: "Garota"
                         }
                     }
+                    title="13 melhores formas de comer manga com leite sem falecer hoje"
                     description="Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim. Quem num gosta di mé."
                     author={
                         {

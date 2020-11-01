@@ -13,6 +13,7 @@ interface CardProps {
      
     },
     description: string,
+    title: string,
     author : {
         image: string,
         name: string
@@ -20,11 +21,11 @@ interface CardProps {
     releaseDate: string
 }
 
-const Card = ({thumbnail, description, author,releaseDate}: CardProps) => {
+const Card = ({thumbnail, description,title, author,releaseDate}: CardProps) => {
     return (
         <Styled.Card>
             <img src={thumbnail.image} alt={thumbnail.alt}/>
-            <h3>13 melhores formas de comer manga com leite sem falecer hoje</h3>
+            <h3>{title}</h3>
             <span>{description}</span>
 
         <Styled.BottomContent>
