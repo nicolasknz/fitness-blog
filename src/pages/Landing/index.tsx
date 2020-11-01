@@ -4,7 +4,7 @@ import Header from '../../components/header'
 import banner from '../../assets/images/banner.jpg'
 import Card from '../../components/card'
 
-import {posts} from '../../utils/posts'
+import {posts} from '../../utils/posts/'
 
 import * as Styled from './styles'
 
