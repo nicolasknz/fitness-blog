@@ -29,7 +29,8 @@ const Home = () => {
             <Header />
             <img src={banner} alt=""/>
 
-            <main>
+            <Styled.ContentContainer>
+                <Styled.PostsWrapper>
                 {posts.map(({title,thumbnail,description,author,releaseDate}:CardProps,index) => {
                         return (
                             <Card 
@@ -53,7 +54,8 @@ const Home = () => {
                         />
                         )
                 })}
-            </main>
+                </Styled.PostsWrapper>
+            </Styled.ContentContainer>
         </Styled.LandingContainer>
     )
 }
