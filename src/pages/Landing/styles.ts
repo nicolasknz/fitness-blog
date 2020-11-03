@@ -14,22 +14,16 @@ export const LandingContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-    width:100%;
+    width:58%;
     align-items:center;
     justify-content:center;
+    
 `
 
-export const BannerContainer = styled.div`
-    width:100%;
-    height:300px;
-    img {
-        width:100%;
-        height:100%;
-    }
-`
+
 
 export const PostsWrapper = styled.div`
-    width:58%;
+    width:100%;
     margin: 0 auto;
 
     display:flex;
