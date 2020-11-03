@@ -1,11 +1,12 @@
 import React from 'react'
-import * as Styles from './styles'
+import * as Styled from './styles'
+import banner from '../../assets/images/banner.jpg'
 
-const Banner = (src : string) => {
+const Banner = () => {
     return (
-        <div>
-            <img src={src}/>
-        </div>
+        <Styled.Container>
+            <img src={banner}/>
+        </Styled.Container>
     )
 }
 
