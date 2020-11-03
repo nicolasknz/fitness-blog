@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const Card = styled.div`
     width: 35rem;
+    margin-bottom:1rem;
+    margin-top:5rem;
     img {
         width: 100%;
         height: 18rem;
