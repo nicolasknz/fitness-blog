@@ -9,19 +9,25 @@ export const LandingContainer = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    
-    background-color:red;
+   
+  
 `;
 
 export const ContentContainer = styled.div`
     width:100%;
+    align-items:center;
+    justify-content:center;
 `
 
 export const PostsWrapper = styled.div`
-    width:100%;
+    width:58%;
+    margin: 0 auto;
 
     display:flex;
+    justify-content: space-between;
     flex-wrap:wrap;
-    justify-content:space-between;
-    border:1px solid black;
+
+    
+
+    
 `
