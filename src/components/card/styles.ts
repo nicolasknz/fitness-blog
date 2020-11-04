@@ -15,6 +15,14 @@ export const Card = styled.div`
         font-weight: 600;
         margin-bottom: 1.1rem;
     }
+   
+`
+export const DescriptionContainer = styled.div`
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 10rem;
+    /* text-align: center; */
 `
 
 export const BottomContent = styled.div`

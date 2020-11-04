@@ -26,7 +26,10 @@ const Card = ({thumbnail, description,title, author,releaseDate}: CardProps) => 
         <Styled.Card>
             <img src={thumbnail.image} alt={thumbnail.alt}/>
             <h3>{title}</h3>
+            <Styled.DescriptionContainer>
             <span>{description}</span>
+            </Styled.DescriptionContainer>
+            
 
         <Styled.BottomContent>
             <Styled.Author>
