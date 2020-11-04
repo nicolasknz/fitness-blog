@@ -15,7 +15,7 @@ export const Menu = styled.div`
   display:flex;
 
   div {
-    font: 400 1.3rem "Poppins";
+    font: 400 1.5rem "Poppins";
     margin-right:1.3rem;
     color: #000
   }

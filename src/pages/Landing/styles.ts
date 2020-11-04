@@ -20,8 +20,6 @@ export const ContentContainer = styled.div`
     
 `
 
-
-
 export const PostsWrapper = styled.div`
     width:100%;
     margin: 0 auto;
@@ -30,7 +28,9 @@ export const PostsWrapper = styled.div`
     justify-content: space-between;
     flex-wrap:wrap;
 
-    
+    @media(max-width:1366px) {
+        justify-content:center;
+    }
 
     
 `
