@@ -1,9 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export const HeaderLink = () => {
+interface HeaderLinksProps {
+    to: string
+}
+
+export const HeaderLink = ({to}:HeaderLinksProps) => {
     return (
-        <Link to=""></Link>
+        <Link to={to}></Link>
     )
 }
 
