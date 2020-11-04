@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+
+import * as Styled from './styles'
 
 interface HeaderLinksProps {
     to: string
@@ -7,7 +8,7 @@ interface HeaderLinksProps {
 
 export const HeaderLink = ({to}:HeaderLinksProps) => {
     return (
-        <Link to={to}></Link>
+        <Styled.Link to={to}></Styled.Link>
     )
 }
 
