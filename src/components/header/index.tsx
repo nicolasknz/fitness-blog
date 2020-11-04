@@ -2,7 +2,7 @@ import React from "react";
 import * as Styled from "./styles";
 import InstagramIcon from "../../assets/images/icons/instagram-icon.svg";
 import FacebookIcon from "../../assets/images/icons/facebook-icon.svg";
-import HeaderLink from '../HeaderLink'
+import HeaderLink from "../HeaderLink";
 
 export const Header = () => {
   return (
@@ -26,8 +26,13 @@ export const Header = () => {
       </Styled.Menu>
 
       <Styled.SocialMedia>
-        <img src={InstagramIcon} alt="Icone Instagram" />
-        <img src={FacebookIcon} alt="Icone Facebook" />
+        <a href="/a">
+          <img src={InstagramIcon} alt="Icone Instagram" />
+        </a>
+
+        <a href="/b">
+          <img src={FacebookIcon} alt="Icone Facebook" />
+        </a>
       </Styled.SocialMedia>
     </Styled.HeaderContent>
   );
