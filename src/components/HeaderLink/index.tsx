@@ -3,12 +3,13 @@ import React from 'react'
 import * as Styled from './styles'
 
 interface HeaderLinksProps {
-    to: string
+    to: string,
+    children: any
 }
 
-export const HeaderLink = ({to}:HeaderLinksProps) => {
+export const HeaderLink = ({to, children}:HeaderLinksProps) => {
     return (
-        <Styled.Link to={to}></Styled.Link>
+        <Styled.Link to={to}>{children}</Styled.Link>
     )
 }
 
