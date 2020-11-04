@@ -9,7 +9,7 @@ export const HeaderContent = styled.header`
   justify-content: space-around;
   align-items: center;
 
-  background-color:#fff;
+  background-color:var(--color-background);
 `
 export const Menu = styled.div`
   display:flex;

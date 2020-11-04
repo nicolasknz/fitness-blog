@@ -8,6 +8,7 @@ import Card from "../../components/card";
 import { posts } from "../../utils/posts/";
 
 import * as Styled from "./styles";
+import TopBar from "../../components/top-bar";
 
 interface CardProps {
   thumbnail: {
@@ -26,6 +27,7 @@ interface CardProps {
 const Home = () => {
   return (
     <Styled.LandingContainer className="container">
+      <TopBar />
       <Header />
 
       <Styled.ContentContainer>

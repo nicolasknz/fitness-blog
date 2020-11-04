@@ -4,7 +4,7 @@ import * as Styled from './styles'
 const TopBar = () => {
     return (
         <Styled.Container>
-            Top Bar
+            <Styled.Input placeholder="O que você deseja saber?" />
         </Styled.Container>
     )
 }
