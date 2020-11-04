@@ -2,27 +2,27 @@ import React from "react";
 import * as Styled from "./styles";
 import InstagramIcon from "../../assets/images/icons/instagram-icon.svg";
 import FacebookIcon from "../../assets/images/icons/facebook-icon.svg";
-import { Link } from "react-router-dom";
+import HeaderLink from '../HeaderLink'
 
 export const Header = () => {
   return (
     <Styled.HeaderContent>
       <Styled.Menu>
-        <Link to="/">
+        <HeaderLink to="/">
           {" "}
           <div>HOME</div>
-        </Link>
-        <Link to="/categorias">
+        </HeaderLink>
+        <HeaderLink to="/categorias">
           <div>CATEGORIAS</div>
-        </Link>
+        </HeaderLink>
 
-        <Link to="/contato">
+        <HeaderLink to="/contato">
           <div>CONTATO</div>
-        </Link>
-        <Link to="/sobre">
+        </HeaderLink>
+        <HeaderLink to="/sobre">
           {" "}
           <div>SOBRE</div>
-        </Link>
+        </HeaderLink>
       </Styled.Menu>
 
       <Styled.SocialMedia>
