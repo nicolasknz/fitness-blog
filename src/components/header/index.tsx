@@ -8,24 +8,24 @@ export const Header = () => {
   return (
     <Styled.HeaderContent>
       <Styled.Menu>
-        <HeaderLink to="/">
-          {" "}
-          <div>HOME</div>
-        </HeaderLink>
-        <HeaderLink to="/categorias">
-          <div>CATEGORIAS</div>
-        </HeaderLink>
+        <Styled.MenuItems>
+          <HeaderLink to="/">
+            {" "}
+            <div>HOME</div>
+          </HeaderLink>
+          <HeaderLink to="/categorias">
+            <div>CATEGORIAS</div>
+          </HeaderLink>
 
-        <HeaderLink to="/contato">
-          <div>CONTATO</div>
-        </HeaderLink>
-        <HeaderLink to="/sobre">
-          {" "}
-          <div>SOBRE</div>
-        </HeaderLink>
-      </Styled.Menu>
-
-      <Styled.SocialMedia>
+          <HeaderLink to="/contato">
+            <div>CONTATO</div>
+          </HeaderLink>
+          <HeaderLink to="/sobre">
+            {" "}
+            <div>SOBRE</div>
+          </HeaderLink>
+        </Styled.MenuItems>
+        <Styled.SocialMedia>
         <a href="/a">
           <img src={InstagramIcon} alt="Icone Instagram" />
         </a>
@@ -34,6 +34,9 @@ export const Header = () => {
           <img src={FacebookIcon} alt="Icone Facebook" />
         </a>
       </Styled.SocialMedia>
+      </Styled.Menu>
+
+      
     </Styled.HeaderContent>
   );
 };

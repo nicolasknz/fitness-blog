@@ -6,17 +6,28 @@ export const HeaderContent = styled.header`
   width: 100%;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-space-between;
   align-items: center;
 
   background-color:var(--color-background);
 `
 export const Menu = styled.div`
+  width:100%;
+  
   display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+`
+
+export const MenuItems = styled.div`
+  display:flex;
+  justify-content: center;
+  align-items: center;
 
   div {
     font: 400 1.5rem "Poppins";
-    margin-right:1.3rem;
     color: #000
   }
 `

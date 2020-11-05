@@ -28,9 +28,10 @@ const Home = () => {
   return (
     <Styled.LandingContainer className="container">
       <TopBar />
-      <Header />
+     
 
       <Styled.ContentContainer>
+      <Header />
         <Banner />
         <Styled.PostsWrapper>
           {posts.map(
