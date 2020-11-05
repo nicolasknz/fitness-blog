@@ -32,8 +32,10 @@ export const Input = styled.input`
 `
 export const SearchBarContainer = styled.div`
     display:flex;
+    
     width:40rem;
     border:1px solid #9c98a6;
+
 
 
 `

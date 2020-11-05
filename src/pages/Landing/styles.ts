@@ -17,8 +17,13 @@ export const ContentContainer = styled.div`
     width:58%;
     align-items:center;
     justify-content:center;
+
+    @media(max-width:680px) {
+        width:100%
+    }
     
 `
+
 
 export const PostsWrapper = styled.div`
     width:100%;
@@ -26,10 +31,13 @@ export const PostsWrapper = styled.div`
 
     display:flex;
     justify-content: space-between;
+    align-content: center;
+
     flex-wrap:wrap;
 
-    @media(max-width:1366px) {
+    @media(max-width:1300px) {
         justify-content:center;
+        flex-direction:column;
     }
 
     
