@@ -4,6 +4,9 @@ import InstagramIcon from "../../assets/images/icons/instagram-icon.svg";
 import FacebookIcon from "../../assets/images/icons/facebook-icon.svg";
 import HeaderLink from "../HeaderLink";
 
+import {FiInstagram} from 'react-icons/fi'
+import {FaFacebookF} from 'react-icons/fa'
+ 
 export const Header = () => {
   return (
     <Styled.HeaderContent>
@@ -27,11 +30,11 @@ export const Header = () => {
         </Styled.MenuItems>
         <Styled.SocialMedia>
         <a href="/a">
-          <img src={InstagramIcon} alt="Icone Instagram" />
+          <FiInstagram color="#000" size="2.5rem"/>
         </a>
 
         <a href="/b">
-          <img src={FacebookIcon} alt="Icone Facebook" />
+          <FaFacebookF color="#000" size="2.5rem"/>
         </a>
       </Styled.SocialMedia>
       </Styled.Menu>

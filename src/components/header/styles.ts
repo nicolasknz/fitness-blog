@@ -13,7 +13,7 @@ export const HeaderContent = styled.header`
 `
 export const Menu = styled.div`
   width:100%;
-  
+
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -33,8 +33,12 @@ export const MenuItems = styled.div`
 `
 
 export const SocialMedia = styled.div`
-  img {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
+ 
+
+  display:flex;
+  justify-content: space-around;
+  width:5rem;
+
+
+
 `
