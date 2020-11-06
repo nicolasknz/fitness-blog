@@ -1,4 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+
+
+import Prismic from 'prismic-javascript'
+import {Date, Link, RichText} from 'prismic-reactjs';
 
 import Header from "../../components/header";
 import Banner from "../../components/banner";
@@ -24,16 +28,61 @@ interface CardProps {
   releaseDate: string;
 }
 
+const apiEndpoint = "https://fitness-blog.cdn.prismic.io/api/v2"
+
+const accessToken = ''
+
+const Client = Prismic.client(apiEndpoint, { accessToken })
+
 const Home = () => {
+  const [doc, setDocData]:any = useState(null)
+  console.log(doc)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response:any = await Client.query(
+        Prismic.Predicates.at('document.type', 'article')
+      )
+      if (response ){
+        setDocData(response.results)
+      }
+    }
+    fetchData()
+  },[])
+
+
   return (
     <Styled.LandingContainer className="container">
-      <TopBar />
-     
 
+    
+    <RichText 
+      render={doc?.data?.texto}
+    />
+
+      <TopBar />
       <Styled.ContentContainer>
       <Header />
         <Banner />
         <Styled.PostsWrapper>
+          {doc?.map((post:any, key:any) => 
+           
+             (
+              <Card
+              thumbnail={{
+                image: post.data.author_image.url,
+                alt: post.data.author_image.alt,
+              }}
+              title={post.data.title[0].text}
+              description={post.data.subtitle[0].text}
+              author={{
+                image: post.data.author_image.url,
+                name: post.data.author_name[0].text,
+              }}
+              releaseDate={post.data.publish_date}
+              key={key}
+            />
+            )
+          )}
           {posts.map(
             (
               { title, thumbnail, description, author, releaseDate }: CardProps,
