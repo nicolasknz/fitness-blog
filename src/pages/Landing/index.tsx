@@ -6,10 +6,10 @@ import {Date, Link, RichText} from 'prismic-reactjs';
 
 import Header from "../../components/header";
 import Banner from "../../components/banner";
-import banner from "../../assets/images/banner.jpg";
+// import banner from "../../src/assets/images/banner.jpg";
 import Card from "../../components/card";
 
-import { posts } from "../../utils/posts/";
+// import { posts } from "../../src/utils/posts/";
 
 import * as Styled from "./styles";
 import TopBar from "../../components/top-bar";
@@ -83,7 +83,7 @@ const Home = () => {
             />
             )
           )}
-          {posts.map(
+          {/* {posts?.map(
             (
               { title, thumbnail, description, author, releaseDate }: CardProps,
               index
@@ -105,7 +105,7 @@ const Home = () => {
                 />
               );
             }
-          )}
+          )} */}
         </Styled.PostsWrapper>
       </Styled.ContentContainer>
     </Styled.LandingContainer>

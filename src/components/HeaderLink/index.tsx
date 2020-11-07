@@ -9,7 +9,9 @@ interface HeaderLinksProps {
 
 export const HeaderLink = ({to, children}:HeaderLinksProps) => {
     return (
-        <Styled.Link to={to}>{children}</Styled.Link>
+        <Styled.Link href={`${to}`}>
+            <Styled.Anchor>{children}</Styled.Anchor>
+        </Styled.Link>
     )
 }
 

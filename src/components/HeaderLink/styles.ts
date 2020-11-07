@@ -1,27 +1,39 @@
 import styled from 'styled-components'
-import {Link as LinkRouterDom} from 'react-router-dom'
+import {default as NextLink} from 'next/link'
 
 
-export const Link = styled(LinkRouterDom)`
-    text-decoration:none;
+
+export const Link = styled(NextLink)`
+    a {
 
 
-    height:5rem;
-    width:11rem;
-    
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    }
+   
 
-    transition:background-color 0.4s;
-  
+`
 
-    &:hover {
+export const Anchor = styled.a`
+        text-decoration:none;
+
+            
+        height:5rem;
+        width:11rem;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        transition:background-color 0.4s;
+
+        &:hover {
         background-color:#000;
-       div {
+     
+        div {
             transition:color 0.4s;
             color:#fff;
           
-       }
+        }
+       
     }
+
 `
