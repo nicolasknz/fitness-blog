@@ -6,15 +6,12 @@ import * as Styled from "./styles";
 
 const TopBar = () => {
     const [search, setSearch] = useState("")
-    console.log(search)
 
     const handleInput = (e:React.FormEvent<HTMLInputElement>) => {
         setSearch(e.currentTarget.value)
-        console.log(search)
     }
 
     const handleClick = () => {
-        console.log(search)
     }
 
   return (
